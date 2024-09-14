@@ -27,11 +27,6 @@ app.use(koaBody({
   json: true,
 }));
 
-const id1 = uuid.v4()
-const id2 = uuid.v4()
-
-const firstContact = new Clients(id1, 'Ivan', false);
-const secondContact = new Clients(id2, 'Alexsandra', false);
 
 function createMsg(userId, created, message) {
   return ({ userId, created, message });
